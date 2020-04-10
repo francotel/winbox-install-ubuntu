@@ -29,16 +29,16 @@ sudo bash winbox-setup remove"
 wbDl() {
 
     echo -n "Downloading Winbox..."
-    URL="https://download.mikrotik.com/routeros/winbox/3.17/winbox.exe"
+    URL="https://download.mikrotik.com/routeros/winbox/3.22/winbox.exe"
     wget -q -c -O winbox.exe $URL
     echo "DONE"
 }
 
 filesCp() {
   echo -n "Copying files..."
-  if [[ !$(mkdir -p /usr/local/bin) ]]
+  if [[ ! $(mkdir -p /usr/local/bin) ]]
   then
-    if [[ !$(cp -f winbox.exe /usr/local/bin/winbox.exe) ]]
+    if [[ ! $(cp -f winbox.exe /usr/local/bin/winbox.exe) ]]
     then
 	    chmod a+x /usr/local/bin/winbox.exe
 	    for size in $( ls -1 icons/winbox-*.png | cut -d\- -f2 | cut -d\. -f1 | paste -sd ' ') ; do

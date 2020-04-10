@@ -6,7 +6,7 @@ A simple helper script to install winbox in GNU/Linux
 2. Installs wine
 3. Upgrade wine (from the distribution's repo) to a newer version (only for Fedora, RHEL, CentOS, IGN)
 4. Menu entry in the application launcher
-5. Latest winbox from https://mikrotik.com/download
+5. Latest winbox from https://mikrotik.com/download (the version's winbox is hardcoded in script)
 
 ## How to install:
 Copy and paste this commands to your terminal
